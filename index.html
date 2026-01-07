@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hasija Hospital</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+* {margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif;}
+body {background:#f5f5f5; color:#333; scroll-behavior:smooth;}
+a {text-decoration:none; color:inherit;}
+img {max-width:100%; display:block;}
+.container {width:90%; max-width:1200px; margin:auto;}
+nav {background:#0066CC; color:#fff; padding:15px 0; position:sticky; top:0; z-index:1000;}
+nav .container {display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;}
+nav ul {list-style:none; display:flex; gap:20px; flex-wrap:wrap;}
+nav ul li {font-weight:600;}
+nav .btn {background:#00CC99; padding:10px 20px; border-radius:5px; font-weight:600; transition:0.3s;}
+nav .btn:hover {background:#009977;}
+nav .logo {width:150px;}
+.announcement {background:#ffcc00; color:#333; padding:15px; text-align:center; font-weight:600;}
+.hero-side {display:flex; align-items:center; justify-content:space-between; padding:60px 10%; background:#e0f8f0; flex-wrap:wrap;}
+.hero-side img {width:45%; border-radius:15px; box-shadow:0 4px 15px rgba(0,0,0,0.2);}
+.hero-content-side {flex:1; padding-left:20px;}
+.hero-content-side h1 {font-size:2.5rem; color:#0066CC; margin-bottom:20px;}
+.hero-content-side p {font-size:1.1rem; margin-bottom:30px; line-height:1.5;}
+.hero-content-side a {padding:15px 35px; background:#00CC99; color:#fff; font-size:1.1rem; border-radius:5px; text-decoration:none;}
+section {padding:80px 0; text-align:center;}
+section h2 {color:#0066CC; font-size:2rem; margin-bottom:30px;}
+section p {max-width:700px; margin:auto; line-height:1.6; font-size:1.05rem;}
+.service-cards, .facilities {display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:40px;}
+.card, .facility-item {background:#f5f5f5; padding:25px; border-radius:10px; width:250px; box-shadow:0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s;}
+.card:hover, .facility-item:hover {transform:translateY(-10px); box-shadow:0 8px 15px rgba(0,0,0,0.2);}
+.card img, .facility-item img {width:80px; margin-bottom:15px; border-radius:10px;}
+.card h3, .facility-item p {color:#0066CC; margin-bottom:10px; font-weight:600;}
+.card p {font-size:0.95rem; line-height:1.4;}
+.doctor-section img {border-radius:50%; margin-bottom:20px; width:200px; height:200px; object-fit:cover; box-shadow:0 4px 15px rgba(0,0,0,0.2);}
+.doctor-section h3 {color:#0066CC; margin-bottom:5px;}
+.doctor-section p {font-size:1rem;}
+.appointment form {max-width:600px; margin:auto; background:#fff; padding:30px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+.appointment input, .appointment select {width:100%; padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc;}
+.appointment button {width:100%; padding:12px; background:#00CC99; color:#fff; border:none; border-radius:5px; font-size:16px; cursor:pointer;}
+.appointment button:hover {background:#009977;}
+#book-now a {transition:0.3s;}
+#book-now a:hover {transform:translateY(-5px); box-shadow:0 6px 12px rgba(0,0,0,0.2);}
+footer {background:#0066CC; color:#fff; padding:50px 0; text-align:center;}
+footer p {margin-bottom:10px;}
+.whatsapp-btn {position:fixed; bottom:20px; right:20px; background:#25D366; color:#fff; padding:15px; border-radius:50%; font-size:1.5rem; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.3);}
+@media(max-width:900px){
+    .hero-side {flex-direction:column;}
+    .hero-content-side {padding-left:0; margin-top:30px;}
+}
+</style>
+</head>
+<body>
+
+<div class="announcement">
+Currently, this hospital is operational at the old branch. New branch with enhanced facilities will open in March. After March, old branch will be permanently closed. OPD Timings: Mon–Sat 9 AM – 9 PM | Sun 9 AM – 2 PM
+</div>
+
+<nav>
+    <div class="container">
+        <img src="logo.png" class="logo" alt="Hasija Hospital Logo">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#hospital-info">Hospital Info</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#doctor">Doctor</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#book-now">Book Now</a></li>
+            <li><a href="#appointment">Appointment</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#appointment" class="btn">Book Appointment</a>
+    </div>
+</nav>
+
+<section class="hero-side" id="home">
+    <div>
+        <img src="hospital_hero.jpg" alt="Hasija Hospital">
+    </div>
+    <div class="hero-content-side">
+        <h1>Providing Wellness & Happiness to Every Patient</h1>
+        <p>First hospital in Jhajjar to help in getting emotional and physical treatment at very low cost.</p>
+        <a href="#appointment">Book Appointment</a>
+    </div>
+</section>
+
+<section id="hospital-info">
+<h2>About Hasija Hospital</h2>
+<p>Hasija Hospital is the first hospital in Jhajjar providing wellness and happiness to every patient. We specialize in emotional and physical treatment at very low cost. Personalized care, advanced facilities, and patient-friendly services are our top priority.</p>
+</section>
+
+<section class="services" id="services">
+<h2>Our Services</h2>
+<div class="service-cards">
+<div class="card"><img src="general_medicine.png" alt="General Medicine"><h3>General Medicine</h3><p>Comprehensive consultation and treatment for all ages.</p></div>
+<div class="card"><img src="diabetes.jpg" alt="Diabetes"><h3>Diabetes Care</h3><p>Complete diabetes management including lifestyle guidance.</p></div>
+<div class="card"><img src="heart.jpg" alt="Heart"><h3>Heart Checkup</h3><p>ECG, Echo, and preventive cardiac care.</p></div>
+<div class="card"><img src="lab.png" alt="Laboratory"><h3>Laboratory</h3><p>Fully computerized lab for accurate and quick test results.</p></div>
+<div class="card"><img src="xray.jpg" alt="X-Ray"><h3>X-Ray</h3><p>Digital X-Ray services for precise imaging.</p></div>
+<div class="card"><img src="tmt.jpg" alt="TMT"><h3>TMT</h3><p>Treadmill Test for heart performance evaluation.</p></div>
+<div class="card"><img src="pft.jpg" alt="PFT"><h3>Pulmonary Function Test</h3><p>Detailed lung function and respiratory assessment.</p></div>
+<div class="card"><img src="pharmacy.png" alt="Pharmacy"><h3>Pharmacy</h3><p>In-house pharmacy ensuring immediate availability of medicines.</p></div>
+</div>
+</section>
+
+<section class="doctor-section" id="doctor">
+<h2>Our Doctor</h2>
+<div style="display:flex; flex-direction:column; align-items:center; margin-top:30px;">
+<img src="doctor.jpg" alt="Dr. Sanjeev Hasija">
+<h3>Dr. Sanjeev Hasija</h3>
+<p>MD Medicine | Ex SMO, ICU Incharge | 17+ years experience</p>
+</div>
+</section>
+
+<section class="facilities" id="facilities">
+<h2>Our Facilities</h2>
+<div class="facility-item"><img src="ward.jpg" alt="Ward Room"><p>Ward Room</p></div>
+<div class="facility-item"><img src="consultation_cabinet.jpg" alt="Consultation Cabinet"><p>Consultation Cabinet</p></div>
+<div class="facility-item"><img src="waiting_area.jpg" alt="Waiting Area"><p>Waiting Area</p></div>
+<div class="facility-item"><img src="lab_gallery.jpg" alt="Laboratory"><p>Laboratory</p></div>
+<div class="facility-item"><img src="echocardiology_lab.jpg" alt="Echocardiology Lab"><p>Echocardiology Lab</p></div>
+<div class="facility-item"><img src="pharmacy_gallery.jpg" alt="Pharmacy"><p>Pharmacy</p></div>
+</section>
+
+<section id="book-now" style="padding:80px 0; background:#e0f8f0; text-align:center;">
+<h2>Book Your Appointment Easily</h2>
+<p>Choose your preferred method to book an appointment with Dr. Sanjeev Hasija:</p>
+<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; margin-top:40px;">
+<a href="#appointment" style="padding:20px 40px; background:#00CC99; color:#fff; border-radius:10px; font-size:1.1rem; font-weight:600; text-decoration:none; box-shadow:0 4px 10px rgba(0,0,0,0.2);">Book on Website</a>
+<a href="https://wa.me/919416762808" target="_blank" style="padding:20px 40px; background:#25D366; color:#fff; border-radius:10px; font-size:1.1rem; font-weight:600; text-decoration:none; box-shadow:0 4px 10px rgba(0,0,0,0.2);">Book via WhatsApp</a>
+</div>
+</section>
+
+<section class="appointment" id="appointment">
+<h2>Book Your Appointment</h2>
+<form id="appointmentForm">
+<input type="text" id="pname" placeholder="Full Name" required>
+<input type="tel" id="pphone" placeholder="Phone Number" required>
+<input type="date" id="pdate" required>
+<input type="time" id="ptime" required>
+<select id="pservice" required>
+<option value="">Select Department</option>
+<option>General Medicine</option>
+<option>Diabetes Care</option>
+<option>Heart Checkup</option>
+<option>Laboratory</option>
+<option>Pharmacy</option>
+</select>
+<button type="submit">Book Appointment</button>
+</form>
+</section>
+
+<footer id="contact">
+<p><strong>Address:</strong> Jhajjar Marg, near Old Ramesh Gas Agency, Silana, Jhajjar, Haryana 124103</p>
+<p><strong>Mobile:</strong> 7988790248 | <strong>WhatsApp:</strong> 9416762808</p>
+<p><strong>OPD Timings:</strong> Mon–Sat: 9:00 AM – 9:00 PM | Sunday: 9:00 AM – 2:00 PM</p>
+<p>&copy; 2026 Hasija Hospital. All rights reserved.</p>
+</footer>
+
+<a href="https://wa.me/919416762808" class="whatsapp-btn" target="_blank">&#x2709;</a>
+
+<script>
+document.getElementById('appointmentForm').addEventListener('submit', function(e){
+e.preventDefault();
+let msg = `Appointment Request%0AName: ${document.getElementById('pname').value}%0APhone: ${document.getElementById('pphone').value}%0ADate: ${document.getElementById('pdate').value}%0ATime: ${document.getElementById('ptime').value}%0ADepartment: ${document.getElementById('pservice').value}`;
+window.open(`https://wa.me/919416762808?text=${msg}`,'_blank');
+alert('Appointment sent on WhatsApp');
+this.reset();
+});
+</script>
+
+</body>
+</html>
